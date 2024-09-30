@@ -1,0 +1,156 @@
+@import url(https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular); 
+/* font-family: "BMWTypeNext Pro Regular"; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* This is to remove any default values from browser and make the code more presdictable for us */
+
+body {
+    font-family: "BMWTypeNext Pro Regular";
+    color: white;
+    
+}
+
+.section-one-wrapper{
+    aspect-ratio: 16/9;
+    width: 100%;
+    position: relative;
+}
+
+
+.section-one-background{
+    aspect-ratio: 16/9;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    gap: 1 px;  
+}
+
+#sec-one-bg-img{
+    object-fit: cover;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    max-width: 100%;
+}
+
+.nav-bar-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100px;
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar-container{
+    width: 620px;     
+    justify-content: center;
+    align-items: center; /*vertical alignment of content*/    
+}
+
+.nav-bar-items{
+    width: 700px;
+}
+
+.nav-bar-items ul{    
+    display: flex; /*align horizontal*/
+    gap:15px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar-items ul li {
+    list-style-type: none; /* Remove bullets */
+}
+
+.search-icon{
+    width: 35px;
+    height: 35px;    
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.search-icon img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1); /*flip*/
+    filter: invert();
+}
+
+.nav-bar-container hr{
+    height: 1px;
+    border: none;
+    background-color: white;
+    opacity: 1;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-bar-container p {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.nav-bmw-logo {
+    width: 95px;
+    height: 75px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.section-one-text-container{
+    
+    position: absolute;        
+    top: 300px;
+    left: 0;
+    padding-left: 60px;
+    background-color: blueviolet;
+}
+
+.section-one-text-container img{
+    height:20px;
+    filter: invert();
+    width: 30px;
+    padding-right: 10px;
+}
+
+.section-one-text-container button{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-color: white;
+    box-shadow: none;
+
+}
+
+.text-line-one {
+    font-size: 17px;
+    margin-bottom: 15px;;
+}
+.text-line-two {
+    font-size: 40px;
+    margin-bottom: 15px;
+}

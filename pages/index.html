@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--Lets make this site responsive and not use bootstrap-->
+   
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This line is important for responsiveness of website-->
+    <title>BMW.com | The cloned international BMW Website</title>
+    
+    <!--The logo file linked is too white. need to replace with a grey variant-->
+    <link rel="icon" href="/assets/icons/bmw- logo-favicon.webp" type="image/webp">
+
+    <!--Bootstrap Styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Link a style sheet to add formating separately-->
+    <link rel="stylesheet" href="/css/style.css">
+     
+
 </head>
 <body>
-    <h1>Hello</h1>
+    <!-- The first section is a header element. This is done for making data available for optimized search results. HOW? -->
+    <!-- Lets use semantics as and when needed.-->
+
+    <div class="section-one-wrapper">
+        <!-- we made an inner div to put in the image and positioned it within the div -->
+        <div class="section-one-background">
+            <img id="sec-one-bg-img" src="/assets/images/concept-car-image.webp" alt="black bmw suv car with white line pattern all over the body">
+        </div>
+       
+        <!-- lets make a navbar -->
+         <!-- it has one big div and a small fiv half the length -->
+        <div class="nav-bar-wrapper">
+            <div class="nav-bar-container">
+                <nav class="nav-bar-items">
+                    <ul>
+                        <li>Home</li>
+                        <li>Circular World</li>
+                        <li>Digital Journey</li>
+                        <li>Electric Future</li>
+                        <li>Freude</li>
+                        <li>Models</li>      
+                        <li>
+                            <div class="search-icon">
+                                <img src="/assets/icons/search-icon.png" alt="magnifying glass icon">
+                            </div>
+                        </li>                  
+                    </ul>
+                    
+                </nav>
+                <hr> <!-- to add a line aka horizontal rule-->
+                <p>Sheer Driving <strong>Pleasure</strong></p>
+            </div>
+            <div class="nav-bmw-logo">
+                <img src="/assets/icons/bmw-logo-light.svg" alt="bmw logo">
+            </div>
+        </div>  
+
+        <div class="section-one-text-container">
+            <div class="text-line-one"><img src="/assets/icons/microphone-icon.png" alt="microphone icon">Erlkönig - German prototype cars</div>
+            <div class="text-line-two">The art of deception</div>
+            <button type="button">Read more</button>
+        </div>
+    </div>
+   
+
+    
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
