@@ -5,23 +5,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} /* This is to remove any default values from browser and make the code more presdictable for us */
+}
+ /* This is to remove any default values from
+  browser and make the code more presdictable for us */
 
 body {
     font-family: "BMWTypeNext Pro Regular"; 
+    color: white;
     width: 100%;  
     display: flex;
     flex-wrap: wrap;
 }
 
+
+
 .section-one-wrapper{
     width: 100%;
     aspect-ratio: 16/9;
-    border: 2px solid black;
     min-height: 200px;
     min-width: 340px;
     overflow: hidden;
-    position: relative;    
+    position: relative;   
+    padding: 2px; 
 }
 
 .section-background{
@@ -40,6 +45,7 @@ body {
 }
 
 .overlay-top{
+    
     z-index: 1;
     position: absolute;
     top: 0;
@@ -47,9 +53,11 @@ body {
     width: 100%;
     height: 50%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.511), rgba(0,0,0,0))
+    
 }
 
 .overlay-bottom{
+    
     z-index: 1;
     position: absolute;
     bottom: 0;
@@ -79,43 +87,203 @@ body {
     transition: transform 3s ease;
 }
 
-.header-section{
-    display: flex;
-}
-.nav.bar{
-    width: 50%;
-}
 
-.nav-list{
-    list-style: none;
-}
 
 
 .section-two-wrapper{
     width: 50%;
-    border: 2px solid black;
+    aspect-ratio: 1;
     min-height: 200px;    
     min-width: 340px;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
 }
+
+.section-two-background{    
+    width: 100%;
+    height: 100%;   
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-background video{    
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: transform 3s ease; /* Ensure transition is added for smooth zoom */
+}
+
+.section-two-wrapper:hover .section-background video {
+    transform: scale(1.1); /* Zoom effect */
+}
+/* You're right to be concerned about other content inside
+ .section-two-wrapper—the current setup targets the video 
+ specifically, but if you have text or other elements within 
+ .section-two-wrapper, they won't be affected as long as the
+  hover effect is applied to only the video inside .section-background. */
 
 .section-three-wrapper{
     width: 100%;
-    border: 2px solid black;
-    height: 500px;
-    min-width: 340px;
+    height: fit-content;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    justify-items: flex-start;
+    margin-top: 30px;
+}
+
+.section-three-container{    
+    width: 100%;
+    gap: 2px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;    
+    flex-direction: column;    
+}
+
+.section-three-text-one{    
+    color: black; 
+}
+
+#sec-3-one-text{
+    color: black;
+    padding: 10px;
+}
+
+.sec-three-break{
+    visibility: hidden;
+}
+
+#sec-3-two-text{
+    color: black;
+    padding: 10px;
+    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.section-three-container{
-    width: 70%;
-    border: 2px solid black;
-    min-height: 200px;
-    min-width: 340px;
+#sec-3-three-text{
+    color: black;
+    padding: 10px;
+    align-self: flex-start;
+}
+
+#sec-3-four-text{
+    color: black;
+    padding: 10px;
+    align-self: flex-start;
+}
+
+#sec-fur-text{
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section-three-text img{
+    width: 13px;
+    margin-right: 5px;
+}
+
+.section-three-text-two img{
+    width: 13px;
+    margin-right: 5px;
+}
+
+
+#sec-3-one-media{
+    
+    vertical-align: middle;
+}
+
+
+
+.section-three-media{
+    height: 100%;
+    aspect-ratio: 16/9;
+    max-width:1024px;
+    overflow: hidden;
+    margin: 0px;
+    
+}
+
+.section-three-media video{
+
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 
 }
+
+@media only screen and (max-width: 1023px){
+    .sec-three-break{
+        display: none;
+    }
+}
+
+@media only screen  and (min-width: 1024px){
+    #section-three-container-one{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        align-self: center;
+        width: 1000px;
+        height: 400px;
+    }
+
+    #section-three-container-two{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        align-self: center;
+        width: 1000px;
+        height: 400px;
+        
+    }
+
+    
+
+    .section-three-media{
+        width: 600px;
+        aspect-ratio: 16/9;
+        position: absolute;
+        right:0;
+    }
+
+    #sec-3-media-two{
+        width: 600px;
+        aspect-ratio: 16/9;
+        position: absolute;
+        left:0;
+    }
+
+    #sec-3-three-text{
+        padding-left: 650px;
+        align-self: flex-start;
+
+    }
+
+    #sec-3-four-text{
+        align-self: flex-start;
+        padding-left: 650px;
+    }
+    
+    
+   
+}
+
 
 .section-four-wrapper{
     width: 100%;
