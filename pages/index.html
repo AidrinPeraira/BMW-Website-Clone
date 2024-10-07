@@ -23,8 +23,39 @@
    
     <!-- The first section is a header element. This is done for making data available for optimized search results. HOW? -->
     <!-- Lets use semantics as and when needed.-->
+
+    <header class="header-section"> 
+      <div class="header-container">
+        <div class="header-text">
+          <div class="navbar-container">
+            <nav class="navbar">
+              <ul class="nav-list">
+                <li class="nav-items">Home</li>
+                <li class="nav-items">Circular World</li>
+                <li class="nav-items">Digital Journey</li>
+                <li class="nav-items">Electric Future</li>
+                <li class="nav-items">Freude</li>
+                <li class="nav-items">Models</li>
+                <li class="nav-items"><img src="/assets/icons/search-icon.png" alt="search icon" class="search-icon"></li>
+              </ul>
+              <hr>
+            </nav>
+          </div>
+          <div class="slogan-container">
+            <h6>Sheer Driving <strong>Pleasure</strong></h6>
+          </div>
+        </div>
+        <div class="header-logo">
+          <img src="/assets/icons/bmw-logo-light.svg" alt="BMW Logo">
+        </div>
+      </div>
+    </header>
+    <!-- MAke nav bar responsive adn add animations and burger icon and links -->
+
+
+
     
-    <div class="section-one-wrapper">
+    <div class="section-one-wrapper">        
         
         <div class="section-background"> 
             <div class="overlay-top"></div>
@@ -37,13 +68,14 @@
 
 
     <div class="section-two-wrapper">
-        <!-- This is putting shadow on the gap!! need to remove -->
-        <div class="overlay-top"></div>
-        <div class="overlay-bottom"></div>
-        <div class="section-background">            
-            <video autoplay muted loop class="background-video"><source src="/assets/videos/bmw-hood-ice-flow-video.mp4" type="video/mp4"> </video>
-        </div>
-    </div>
+      <!-- This is putting shadow on the gap!! need to remove -->
+      <div class="overlay-top"></div>
+      <div class="overlay-bottom"></div>
+      <div class="section-background">
+          <video  autoplay muted loop><source src="/assets/videos/bmw-hood-ice-flow-video - Copy.mp4" type="video/mp4"> </video>
+          <!-- Removed the class name to prevent hover zoom action -->
+      </div>
+  </div>
     <div class="section-two-wrapper">
         <!-- This is putting shadow on the gap!! need to remove -->
         <div class="overlay-top"></div>
@@ -74,7 +106,7 @@
                         <img class="d-block w-100" src="/assets/images/carousel-image-two.webp" alt="Second slide">
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/" alt="Third slide">
+                        <img class="d-block w-100" src="/assets/images/carousel-image-three.jpg" alt="Third slide">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -102,12 +134,133 @@
 
         <div class="section-three-text-two" id="sec-3-four-text"><img src="/assets/icons/next icon.png" alt="next icon right arriw"><h7>BMW Explained</h7></div>
 
-   </div>
-        
+      </div>      
 
     </div>
+
+
     <div class="section-four-wrapper">
-        <h1>carousel</h1>
+
+        <div class="section-four-text-container">
+          <div class="sec-4-heading">
+            <h2>The BMW Podcast: Changing Lanes</h2>
+          </div>
+          <div class="sec-4-caption">
+            <p>Changing Lanes is the official podcast from BMW. In these audio series, we take you with us on new journeys through the BMW universe. Find out more about sustainability, innovation, technology, mobility and the latest trends. You can find and subscribe to Changing Lanes on all major podcast platforms, so tune in!</p>
+          </div>
+          <div class="sec-4-button">
+            <button class="listen-now-button" type="button">Listen now</button>
+          </div>
+        </div>
+
+        <!-- Add arrow contorls -->
+        <!-- Is there a way too loop infintely without duplicating the frist few cards? -->
+        <div class="section-four-card-container">
+          
+          <div class="card-carousel">
+
+
+            <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-one-glass.mp4" type="video/mp4"></video>
+             <div class="card-body">
+                <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+               <h5 class="card-title">GAME CHANGER</h5>
+               <p class="card-text">An audio series bout those who change the world around them</p>
+             </div>
+           </div>
+  
+            <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-two-splatter.mp4" type="video/mp4"></video>
+          
+              <div class="card-body">
+                  <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                <h5 class="card-title">Bmw and superheros</h5>
+                <p class="card-text">Freeing Gaia Podcast</p>
+              </div>
+           </div>
+  
+           <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-three-hardfluid.mp4" type="video/mp4"></video>
+          
+              <div class="card-body">
+                <h5 class="card-title">ELECTRIC MYTHS</h5>
+                <p class="card-text">A video podcast about electric driving myths</p>
+              </div>
+           </div>
+  
+           <div class="card">
+                <video autoplay loop muted class="card-video"><source src="/assets/card media/card-four-softfluid.mp4" type="video/mp4"></video>
+            
+                <div class="card-body">
+                  <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                  <h5 class="card-title">The future according to..</h5>
+                  <p class="card-text">Audio column</p>
+                </div>
+            </div>
+  
+            <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-five-abstract.mp4" type="video/mp4"></video>
+          
+              <div class="card-body">
+                <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                <h5 class="card-title">DEE MY GUEST</h5>
+                <p class="card-text">An audio series about humans and machines</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-six-fabric.mp4" type="video/mp4"></video>
+          
+              <div class="card-body">
+                <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                <h5 class="card-title">CHASING THE GREENEST CAR</h5>
+                <p class="card-text">An audio doumentary about sustainability at BMW</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-seven-pointy.mp4" type="video/mp4"></video>
+          
+              <div class="card-body">
+                <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                <h5 class="card-title">HIS IS FORWARDISM</h5>
+                <p class="card-text">An audio series with the shapers of our future</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-eight-falling.mp4" type="video/mp4"></video>
+          
+              <div class="card-body">
+                <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                <p class="card-text">Sci-Fi Thriller for your ears</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="/assets/card media/card-nine-text.webp" alt="card image">
+          
+              <div class="card-body">
+                <p class="card-text">Exclusive BMW insights</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="/assets/card media/card-ten-skyline.webp " alt="card image">
+          
+              <div class="card-body">
+                <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                <h5 class="card-title">podcast</h5>
+                <p class="card-text">HYPNOPOLIS 2: UTOPIA IN PROGRES</p>
+              </div>
+            </div>
+
+
+          </div>
+
+         
+        </div>
+
     </div>
     <div class="section-five-wrapper">
         <h1>Text</h1>
