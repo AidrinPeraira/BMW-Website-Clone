@@ -99,7 +99,7 @@
         </div>      
       </div> 
 
-        <!-- This is putting shadow on the gap!! need to remove -->
+        <!-- The shadow is gone. the overlay has issues when hovering over the cenetere of the image -->
         <div class="overlay-top"></div>
         <div class="overlay-bottom"></div>
         <div class="section-background">
@@ -113,32 +113,32 @@
             <div class="section-three-text" id="sec-3-one-text"><h4>Learn everything about <br class="sec-three-break">BMW here</h4></div>
             
             <div class="section-three-media" id="sec-3-one-media">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/images/carousel-image-one.webp" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/carousel-image-two.webp" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/images/carousel-image-three.jpg" alt="Third slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                    </a>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="/assets/images/carousel-image-one.webp" alt="First slide">
                   </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="/assets/images/carousel-image-two.webp" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="/assets/images/carousel-image-three.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
 
             <div class="section-three-text" id="sec-3-two-text"><img src="/assets/icons/next icon.png" alt="next icon right arriw"><h7>BMW NEWS</h7></div>
@@ -276,6 +276,54 @@
               </div>
             </div>
 
+            <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-one-glass.mp4" type="video/mp4"></video>
+             <div class="card-body">
+                <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+               <h5 class="card-title">GAME CHANGER</h5>
+               <p class="card-text">An audio series bout those who change the world around them</p>
+             </div>
+           </div>
+  
+            <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-two-splatter.mp4" type="video/mp4"></video>
+          
+              <div class="card-body">
+                  <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                <h5 class="card-title">Bmw and superheros</h5>
+                <p class="card-text">Freeing Gaia Podcast</p>
+              </div>
+           </div>
+  
+           <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-three-hardfluid.mp4" type="video/mp4"></video>
+          
+              <div class="card-body">
+                <h5 class="card-title">ELECTRIC MYTHS</h5>
+                <p class="card-text">A video podcast about electric driving myths</p>
+              </div>
+           </div>
+  
+           <div class="card">
+                <video autoplay loop muted class="card-video"><source src="/assets/card media/card-four-softfluid.mp4" type="video/mp4"></video>
+            
+                <div class="card-body">
+                  <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                  <h5 class="card-title">The future according to..</h5>
+                  <p class="card-text">Audio column</p>
+                </div>
+            </div>
+  
+            <div class="card">
+              <video autoplay loop muted class="card-video"><source src="/assets/card media/card-five-abstract.mp4" type="video/mp4"></video>
+          
+              <div class="card-body">
+                <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+                <h5 class="card-title">DEE MY GUEST</h5>
+                <p class="card-text">An audio series about humans and machines</p>
+              </div>
+            </div>
+
 
           </div>
 
@@ -294,99 +342,243 @@
 
     <div class="section-gallery-wrapper">
         <div class="box-big">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <p>BMW Wallpapers</p>
+          </div>
           <img src="/assets//gallery/01-img.webp" alt="img one">
         </div>
-        <div class="box-small">
+
+        <div class="box-small">          
+          <div class="gallery-overlay-white"></div>
+          <div class="gallery-caption-black">
+            <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+            <h6><strong>BMW Explained</strong></h6>
+            <p>BMW History: 17 iconic double kidney grile designs</p>
+          </div>
           <div class="videodiv">
             <video autoplay muted loop class="small-video">
               <source src="/assets/gallery/02-vid.mp4" type="video/mp4">
             </video>
           </div>
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>Art and speed</strong></h6>
+            <p>Hervé Poulain – the visionary behind the BMW Art Car</p>
+          </div>
           <img src="/assets/gallery/03-img.jpg" alt="img 3">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-white"></div>
+          <div class="gallery-caption-black">
+            <h6><strong>BMW Welt, BMW Museum, and BMW M Driving Academy</strong></h6>
+            <p>BMW Munich Experience</p>
+          </div>
           <img src="/assets/gallery/04-img.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+            <h6><strong>Wild at Art</strong></h6>
+            <p>The History of the BMW Art Cars</p>
+          </div>
           <img src="/assets/gallery/05-img.jpg" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>BMW Art Car #20</strong></h6>
+            <p>Julie Mehretu – dynamics in form</p>
+          </div>
           <img src="/assets/gallery/06-img.jpg" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>The BMW XM MYSTIQUE ALLURE</strong></h6>
+            <p>Tailored with high-fashion materials</p>
+          </div>
           <img src="/assets/gallery/07-img.jpg" alt="">
         </div>
+
         <div class="box-big">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>BMW Concept Skytop</strong></h6>
+            <p>The fusion of tradition and modernity</p>
+          </div>
           <img src="/assets//gallery/08-img.jpg" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>Art meets innovation</strong></h6>
+            <p>The BMW i5 Flow NOSTOKANA</p>
+          </div>
           <div class="videodiv">
             <video autoplay muted loop class="small-video">
               <source src="/assets/gallery/09-vid.mp4" type="video/mp4">
             </video>
           </div>
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>The future of luxury</strong></h6>
+            <p>Digital art meets mobility</p>
+          </div>
           <img src="/assets/gallery/10-img.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>BMW Vision Neue Klasse X</strong></h6>
+            <p>Welcome to the Neue Klasse Family from BMW</p>
+          </div>
           <img src="/assets/gallery/11-img.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>BMW M x LEGO®</strong></h6>
+            <p>Attention to detail comes in adouble pack</p>
+          </div>
           <img src="/assets/gallery/12-img.jpg" alt="">
         </div>
+
         <div class="box-big">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>Tactile fascination</strong></h6>
+            <p>A touch of the future with BMW</p>
+          </div>
           <img src="/assets/gallery/13-img.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <p>Accept no limitation</p>
+          </div>
           <img src="/assets/gallery/14-img.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>BMW film</strong></h6>
+            <p>Freude stays forever</p>
+          </div>
           <img src="/assets/gallery/15-img.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>Rebelle Rally</strong></h6>
+            <p>An off-road adventure in the BMW X2</p>
+          </div>
           <img src="/assets/gallery/16-img.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>The future is bright</strong></h6>
+            <p>The pioneering light concept of the BMW Vision Neue Klasse</p>
+          </div>
           <div class="videodiv">
             <video autoplay muted loop class="small-video">
               <source src="/assets/gallery/17-vid.mp4" type="video/mp4">
             </video>
           </div>
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>Creative Joy</strong></h6>
+            <p>Luxury redefined</p>
+          </div>
           <img src="/assets/gallery/18-img.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>Innovatively mobile</strong></h6>
+            <p>BMW i5: with dynamism and a helping hand</p>
+          </div>
           <div class="videodiv">
             <video autoplay muted loop class="small-video">
               <source src="/assets/gallery/19-vid.mp4" type="video/mp4">
             </video>
           </div>
         </div>
+
         <div class="box-big">
+          <div class="gallery-overlay-white"></div>
+          <div class="gallery-caption-black">
+            <img src="/assets/icons/microphone-icon.png" alt="microphone icon">
+            <h6><strong>BMW and superheroes</strong></h6>
+            <p>Freeing Gaia Podcast</p>
+          </div>
           <div class="videodiv">
             <video autoplay muted loop class="small-video">
               <source src="/assets/gallery/20-vid.mp4" type="video/mp4">
             </video>
           </div>
+
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-white"></div>
+          <div class="gallery-caption-black">
+            <h6><strong>BMW explained</strong></h6>
+            <p>A tribute to Hofmeister kink</p>
+          </div>
           <img src="/assets/gallery/img-x.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>Halloween story</strong></h6>
+            <p>Caught between space and time</p>
+          </div>
           <img src="/assets/gallery/21-img.webp" alt="">
         </div>
+
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-black">
+           <p>FREUDE.FOREVER No. 2</p>
+          </div>
           <div class="videodiv">
             <video autoplay muted loop class="small-video">
               <source src="/assets/gallery/22-vid.mp4" type="video/mp4">
             </video>
           </div>
-        </div>        
+        </div> 
+              
         <div class="box-small">
+          <div class="gallery-overlay-black"></div>
+          <div class="gallery-caption-white">
+            <h6><strong>Experience the future now</strong></h6>
+            <p>Everything about the Neue Klasse from BMW</p>
+          </div>
           <img src="/assets/gallery/23-img.webp" alt="">
         </div>
     </div>

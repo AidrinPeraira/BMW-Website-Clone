@@ -163,10 +163,14 @@ hr{
     opacity: 0;
 }
 
+.section-one-wrapper:hover .overlay-bottom,
+.section-one-text:hover .overlay-bottom,
+.section-two-wrapper:hover .overlay-bottom,
 .overlay-bottom:hover{
     opacity: 1;
     transition: opacity 2s ease;
 }
+
 .section-one-text{
     height: 70%;
     max-width: 1000px;
@@ -178,7 +182,7 @@ hr{
     align-items: flex-start;
     justify-content: flex-end;
     margin: 50px;
-    z-index: 999;
+    z-index: 2;
 }
 
 .section-one-text div{
@@ -187,6 +191,7 @@ hr{
     align-items: center;
     margin: 0;
 }
+
 .section-one-title{
     margin: 0;
     font-size: 3vh;
@@ -207,7 +212,7 @@ hr{
     color: white;
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid white;
-    font-size: 3vh;
+    font-size: 3v;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -256,17 +261,19 @@ hr{
 .section-background video{    
     object-fit: cover;
     object-position: center;
-    z-index: ;
+    z-index: 0;
     width: 100%;
     height: 100%;
     transition: transform 3s ease; /* Ensure transition is added for smooth zoom */
 }
 
+.section-one-text:hover .section-background img,
 .section-two-wrapper:hover .section-background img {
     transform: scale(1.1); /* Zoom effect */
     transition: transform 5s ease;
 }
 
+.section-one-text:hover .section-background img,
 .section-two-wrapper:hover .section-background video {
     transform: scale(1.1); /* Zoom effect */
 }
@@ -275,6 +282,10 @@ hr{
  specifically, but if you have text or other elements within 
  .section-two-wrapper, they won't be affected as long as the
   hover effect is applied to only the video inside .section-background. */
+
+
+
+
 
 .section-three-wrapper{
     width: 100%;
@@ -430,6 +441,9 @@ hr{
 }
 
 
+
+
+
 .section-four-wrapper{
     width: 100%;
     background-color: rgb(38, 38, 38);
@@ -477,35 +491,34 @@ hr{
     display: flex;
     direction: row;
     align-items: center;    
-    width: calc(360px*10);
+    width: calc(360px*15);
     animation: scrollAnimation 50s ease-in-out 5s infinite normal none;
    
 }
 
 @keyframes scrollAnimation {
     0% { transform: translateX(0); }
-    5% { transform: translateX(-0%); } /* Pause for the first card */
-    10% { transform: translateX(-10%); } /* Move to the second card */
-    15% { transform: translateX(-10%); } /* Pause for the second card */
-    20% { transform: translateX(-20%); } /* Move to the third card */
-    25% { transform: translateX(-20%); } /* Pause for the third card */
-    30% { transform: translateX(-30%); } 
-    35% { transform: translateX(-30%); }
-    40% { transform: translateX(-40%); } 
-    45% { transform: translateX(-40%); } 
-    50% { transform: translateX(-50%); } 
-    55% { transform: translateX(-50%); } 
-    60% { transform: translateX(-60%); } 
-    65% { transform: translateX(-60%); } 
-    70% { transform: translateX(-70%); } 
-    75% { transform: translateX(-70%); } 
-    80% { transform: translateX(-80%); } 
-    85% { transform: translateX(-80%); } 
-    90% { transform: translateX(-90%); } 
-    95% { transform: translateX(-90%); } 
-    100% { transform: translateX(-100%); } 
+    5% { transform: translateX(0); } /* Pause for the first card */
+    10% { transform: translateX(-278px); } /* Move to the second card */
+    15% { transform: translateX(-278px); } /* Pause for the second card */
+    20% { transform: translateX(-556px); } /* Move to the third card */
+    25% { transform: translateX(-556px); } /* Pause for the third card */
+    30% { transform: translateX(-834px); } 
+    35% { transform: translateX(-834px); }
+    40% { transform: translateX(-1112px); } 
+    45% { transform: translateX(-1112px); } 
+    50% { transform: translateX(-1390px); } 
+    55% { transform: translateX(-1390px); } 
+    60% { transform: translateX(-1668px); } 
+    65% { transform: translateX(-1668px); } 
+    70% { transform: translateX(-1946px); } 
+    75% { transform: translateX(-1946px); } 
+    80% { transform: translateX(-2224px); } 
+    85% { transform: translateX(-2224px); } 
+    90% { transform: translateX(-2502px); } 
+    95% { transform: translateX(-2502px); } 
+    100% { transform: translateX(-2780px); } 
 }
-
 
 .card{
     height: 360px;
@@ -599,6 +612,9 @@ hr{
     width: 100%;
     margin: 0;
     padding: 1px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
 }
 
 .box-big img{
@@ -614,6 +630,8 @@ hr{
     aspect-ratio: 16/9;
     margin: 0;
     padding: 1px;
+    position: relative;
+    overflow: hidden;
 }
 
 .box-small img{
@@ -638,7 +656,80 @@ hr{
     overflow: hidden;
 }
 
+.gallery-caption-black,
+.gallery-caption-white{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 9;
 
+}
+
+.gallery-caption-black{
+    color: black;
+}
+
+.gallery-caption-white img{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+    filter: invert();
+    z-index: 2;
+}
+
+.gallery-caption-black img{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+.gallery-overlay-black{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,0.511));
+    opacity: 0;
+}
+
+.box-small:hover .gallery-overlay-black,
+.box-big:hover .gallery-overlay-black{    
+    opacity: 1;
+    transition: opacity 2s ease;    
+}
+
+.gallery-overlay-white{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(252, 252, 252, 0.511));
+    opacity: 0;
+}
+
+
+.box-small:hover .gallery-overlay-white,
+.box-big:hover .gallery-overlay-white{    
+    opacity: 1;
+    transition: opacity 2s ease;    
+}
+
+.box-small:hover img,
+.box-big:hover img{
+    transform: scale(1.05);
+    transition: transform 3s ease;
+}
 
 
 .footer-section{
@@ -709,7 +800,6 @@ hr{
 .list-line{
     width: 150px;
 }
-
 
 
 .copyright-bar{
